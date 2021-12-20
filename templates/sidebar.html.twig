@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="{{ asset('css/stylesidebar.css')}}"/>
+<title>{% block title %}{{title}}{% endblock %}</title>
+</head>
+<body>
+
+<div class="grid-container">
+  <div class="item1">{% block header %}{{ header }}{% endblock %}</div>
+  <div class="item2"></br>
+  {% block menu %}{% include('forall/menu.html.twig') %}{% endblock %}</div>
+  <div class="item3">{% block content %}{{tekst}}{% endblock %}</div>
+  <div class="item4">{% block rightbar %}{{ prawo  }}{% endblock %}</div>
+  <div class="item5">{% block footer %}{{ footer }}{% endblock %}</div>
+</div>
+
+</body>
+</html>

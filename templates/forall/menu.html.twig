@@ -1,0 +1,13 @@
+  <a href="{{ path("default_index") }}">Strona główna</a></br>
+  <a href="{{ path("przelewy") }}">przelewy</a></br>
+  <a href="{{ path("przelewy_krajowe") }}">   -Przelewy krajowe</a>
+  <ul>
+    <li><a href="{{ path("przelewy_obcy") }}">Na rachunek obcy</a></li>
+    <li><a href="{{ path("przelewy_wlasne") }}">Na rachunek własny</a></li>
+  </ul>
+  <a href="{{ path("listaprzelewy", { 'data': '20 październik 2020', 'kwota': '2000zł' }) }}">Lista Przelewów</a></br>
+  <p><a href="{{ path("karty_do_kont") }}">Karty</a></p>
+   <ul>
+    <li><a href="{{ path("karty_do_kont") }}">Karty do kont</a></li>
+    <li><a href="{{ path("karty_debetowe") }}">Karty debetowe</a></li>
+</ul>
